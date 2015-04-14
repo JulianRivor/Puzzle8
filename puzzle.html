@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>PUZZLE</title>
+        <script type="text/javascript" src="funcionespuzzle.js"></script>
+        <link href="estilospuzzle.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Dale Click en nuevo y resuelve el puzzle</p>
+        <form name="frm" id="frm" >
+            <!--<table  id="tabla1" align=center>-->    
+                
+                    <table id="tabla2" >
+                        <tr>
+                            <td id="uno"><img src="uno.jpg" id="c1" onclick="pasar(frm,this,1);" > </td>
+                            <td id="dos"><img src="dos.jpg" id="c2" onclick="pasar(frm,this,2);" > </td>
+                            <td id="tres"><img src="tres.jpg" id="c3" onclick="pasar(frm,this,3);" > </td>
+                        </tr>
+                        <tr>
+                            <td id="cuatro"><img src="cuatro.jpg" id="c4" onclick="pasar(frm,this,4);" > </td>
+                            <td id="cinco"><img src="cinco.jpg" id="c5" onclick="pasar(frm,this,5);" > </td>
+                            <td id="seis"><img src="seis.jpg" id="c6" onclick="pasar(frm,this,6);" > </td>
+                        </tr>
+                        <tr>
+                            <td id="siete"><img src="siete.jpg" id="c7" onclick="pasar(frm,this,7);" > </td>
+                            <td id="ocho"><img src="ocho.jpg" id="c8" onclick="pasar(frm,this,8);" > </td>
+                            <td id="nueve"><img src="blanco.jpg" id="c9" onclick="pasar(frm,this,9);"> </td>
+                        </tr>
+            </table>
+                        
+          <!--  </table> -->
+                <button>Reset</button>
+           <!-- <input type="button" id="myBtn" onclick="numeros()" value="Click me">-->
+            <input type="button" id="myBtnnombres" onclick="random()" value="Nuevo">
+           
+        </form>
+    </body>
+</html>
